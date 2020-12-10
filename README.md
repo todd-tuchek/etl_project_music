@@ -52,6 +52,6 @@ Please upload the report to Github and submit a link to Bootcampspot.
 ​
 - - -
 ​
-### Copyright
+### OUR PROJECT
 ​
-Coding Boot Camp © 2019. All Rights Reserved
+For this ETL project, our group decided to take on Music Metadata. We were able to brainstorm a couple of ideas, but had to scrape the majority in order to complete the project within the allotted time-frame. In the end, we landed on pairing up weekly data from Spotify’s Top 200 streams and Billboard’s Hot 100 chart to further investigate the relationship between Billboard Ranks and streaming numbers from one of music’s most popular Digital Service Providers (DSP). One main question we want to ask is: Does a top streamed song on Spotify mean they are likely to also chart in the Hot 100?

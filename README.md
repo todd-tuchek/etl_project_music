@@ -52,6 +52,18 @@ Please upload the report to Github and submit a link to Bootcampspot.
 ​
 - - -
 ​
-### OUR PROJECT
+## OUR PROJECT
 ​
 For this ETL project, our group decided to take on Music Metadata. We were able to brainstorm a couple of ideas, but had to scrape the majority in order to complete the project within the allotted time-frame. In the end, we landed on pairing up weekly data from Spotify’s Top 200 streams and Billboard’s Hot 100 chart to further investigate the relationship between Billboard Ranks and streaming numbers from one of music’s most popular Digital Service Providers (DSP). One main question we want to ask is: Does a top streamed song on Spotify mean they are likely to also chart in the Hot 100?
+
+​
+### Issues we faced
+​
+When we first started fleshing out ideas, we landed on one issue facing music data aggregation:  How to gather all the music publishing information that exists between the multiple Performance Rights Organizations (PRO) into one database. Given the limited timeframe for this project, we realized we would not have enough time to efficiently write the code to scrape all the PROs for that information. Back to the drawing board we went and started looking at readily available music information that we could work with. 
+
+Kaggle turned out to be our best friend, as we were able to find data sets pulled from both Spotify and Billboard APIs. The information pulled in from Spotify allowed us to look at the Top 200 streams for each week from 2016-2019, while the Billboard data gave us weekly chart positions for track in the Hot 100 from 1999 - 2019. Before we could transform the data, we noticed a few discrepancies between the metadata in each dataset. Just like every major music company in the world, you would think the hardest negotiation would be royalty splits, but actually, it’s the metadata. For example, the song “Sunflower” by Post Malone and Swae Lee can be represented in a few ways:
+“Sunflower” by Post Malone, Swae Lee
+“Sunflower - Spider-Man: Into the Spiderverse” by Post Malone feat. Swae Lee
+“Sunflower feat. Swae Lee” by Post Malone
+
+
